@@ -1,0 +1,22 @@
+.bg-primary{
+background:#008080!important;
+}
+.mt20{
+margin-top:30px;
+}
+
+.container-custom{
+width:90%!important;
+margin:auto;
+background:#e6e6fa!important;
+
+}
+
+.container my-3{
+background:blue;
+}
+
+.container-footer{
+margin-top:100px;
+background:blue
+}

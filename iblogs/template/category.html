@@ -1,0 +1,29 @@
+{%extends 'base.html' %}
+
+{%block title%} POST {%endblock%}
+
+{%block content%}
+
+<div class="container-custom">
+
+    <h3>{{cat.title}}</h3>
+    <div class="img-container">
+        <img src="/media/{{cat.image}}" class="responsive-img" style="max-height:300px; width:100%; object-fit:cover" alt="">
+    </div>
+
+</div>
+
+<div class="collection">
+
+    {%for p in posts %}
+        <a href="/blog/{{p.url}}" class="collection-item">{{p.title}}</a>
+
+        {% empty %}
+
+    <h4>No posts in this Category! , if you want posts related to this category, you can add query in Contact Us Page.</h4>
+
+        {%endfor%}
+
+      </div>
+
+{%endblock%}
